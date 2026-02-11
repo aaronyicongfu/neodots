@@ -1,11 +1,13 @@
 - defaults:
     link:
       relink: true
+      force: true
 
 - link:
     ~/.aliases: aliases
     ~/.zshrc_custom: zshrc_custom
     ~/.tmux.conf: tmux.conf
+    ~/.claude/CLAUDE.md: claude_code/GLOBAL_CLAUDE.md
 
 - shell:
     - command: |
