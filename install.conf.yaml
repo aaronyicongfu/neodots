@@ -5,6 +5,7 @@
 - link:
     ~/.aliases: aliases
     ~/.zshrc_custom: zshrc_custom
+    ~/.tmux.conf: tmux.conf
 
 - shell:
     - command: |
