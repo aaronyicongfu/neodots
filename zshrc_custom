@@ -1,0 +1,6 @@
+# Load local aliases
+if [ -f ~/.aliases]; then
+  source ~/.aliases
+fi
+
+# do other stuff

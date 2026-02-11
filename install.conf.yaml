@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    ~/.aliases: aliases
+    ~/.zshrc_custom: zshrc_custom
+
+- shell:
+    - command: |
+        if [ "$(tail -n 1 ~/.zshrc)" != "source ~/.zshrc_custom" ]; then
+          echo "" >> ~/.zshrc
+          echo "source ~/.zshrc_custom" >> ~/.zshrc
+          echo "Appended 'source ~/.zshrc_custom' to ~/.zshrc"
+        else
+          echo "~/.zshrc already sources ~/.zshrc_custom"
+        fi
+      description: Ensuring ~/.zshrc sources ~/.zshrc_custom
+      stdout: true
+      stderr: true
