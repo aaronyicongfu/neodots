@@ -21,8 +21,9 @@ alias sb='source ~/.bashrc'
 alias vz='vim ~/.zshrc'
 alias sz='source ~/.zshrc'
 
-# git related
-alias gs='git status'
+# version control related
+# alias gs='git status'
+alias gs='git status 2>/dev/null || sl status'
 alias gd='git diff'
 alias gl='git log'
 alias gitprune='echo "pruning merged remote/local branches..." && git fetch -p && git branch -vv | awk "/: gone]/{print \$1}" | xargs git branch -d'
