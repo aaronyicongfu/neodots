@@ -19,5 +19,3 @@
       description: Ensuring ~/.zshrc sources ~/.zshrc_custom
       stdout: true
       stderr: true
-    - command: source ~/.zshrc
-      description: source ~/.zshrc
